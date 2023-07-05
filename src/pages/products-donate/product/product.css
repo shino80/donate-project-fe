@@ -1,0 +1,66 @@
+:root {
+  --primaryColor: #476a2e;
+  --primaryDarkColor: #c02c03;
+  --mainWhite: #fff;
+
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 0.3rem;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --mainBorderRadius: 0.25rem;
+  --smallWidth: 85vw;
+  --maxWidth: 40rem;
+}
+
+.product {
+  background: var(--mainWhite);
+  margin-bottom: 2rem;
+  box-shadow: var(--lightShadow);
+  transition: var(--mainTransition);
+  display: grid;
+  grid-template-columns: auto;
+  border-radius: var(--mainBorderRadius);
+  text-align: center;
+}
+
+.product img {
+  height: 20rem;
+  object-fit: cover;
+  border-top-left-radius: var(--mainBorderRadius);
+  border-top-right-radius: var(--mainBorderRadius);
+  display: block;
+  width: 100%;
+}
+
+.product-footer {
+  padding: 1.5rem;
+}
+
+.product h4 {
+  font-size: 1.3rem;
+}
+
+.product h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  color: var(--primaryColor);
+  border: 2px solid var(--primaryColor);
+  padding: 0.45rem 0.8rem;
+  display: inline-block;
+  transition: var(--mainTransition);
+  cursor: pointer;
+  font-size: 0.8rem;
+  background: transparent;
+  border-radius: var(--mainBorderRadius);
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+}

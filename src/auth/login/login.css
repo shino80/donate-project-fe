@@ -1,0 +1,93 @@
+
+ /* LOGIN  */
+ .section-app{
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: black;
+
+  background-image: url(../../../public/img/homepage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; 
+ }
+  .auth-form-container,.login-form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+  @media screen and (min-width: 600px) {
+    .auth-form-container {
+      padding: 5rem;
+      border: 1px solid green;
+      border-radius: 10px;
+      margin: 0.5rem;
+    }
+  }
+
+  
+  
+
+.label-auth{
+  text-align: left;
+  padding: 0.25rem 0;
+  color: black;
+}
+
+  
+.input-auth {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: 2px solid green;
+  border-radius: 10px;
+}
+
+.button-auth:hover {
+  background: rgb(104, 230, 104);
+}
+#email, #password, #name {
+  color: black;
+}
+  
+.link-btn {
+  border: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #7439db;
+  border: none;
+  color: black;
+  text-decoration: underline;
+}
+.h2-title{
+  color: black;
+  font-size: 2rem;
+}
+.errmsg {
+  color: red;
+  font-size: 1rem;
+  border: 1px solid wheat;
+  border-radius: 10%;
+  text-align: center;
+}
+
+.offscreen{
+  display: none;
+}
+.login-form button{
+background-color: wheat;
+width: 100px;
+  height: auto;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #0a0251;
+  text-align: center;
+  transition: 0.4s;
+  margin-left: 100px;
+  margin-top: 20px;
+}

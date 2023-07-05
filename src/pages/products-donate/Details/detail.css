@@ -1,0 +1,74 @@
+
+/* DETAILS */
+.product-section {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.detail-product {
+    display: flex;
+    gap: 10rem;
+    padding: 10rem ;
+}
+.detail-product img {
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    border-radius: var(--mainBorderRadius);
+}
+.product-info{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  
+     margin-left: 10rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 3rem;
+   
+}
+.select-box {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+.product-info p {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+.info-row{
+    display: flex;
+    align-items: center;
+}
+.btn-donate {
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    color: var(--primaryColor);
+    border: 2px solid var(--primaryColor);
+    padding: 0.45rem 0.8rem;
+    display: inline-block;
+    transition: var(--mainTransition);
+    cursor: pointer;
+    font-size: 0.8rem;
+    background: transparent;
+    border-radius: var(--mainBorderRadius);
+    display: inline-block;
+    margin-top: 1rem;
+    width: 10rem;
+    
+  }
+  
+  .btn-donate:hover {
+    background: var(--primaryColor);
+    color: var(--mainWhite);
+  }
+  
+
+
