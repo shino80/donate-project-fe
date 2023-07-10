@@ -30,28 +30,28 @@ const Register = () => {
 
   const handleSubmit =  async (e) => {
     e.preventDefault();
-    try {
-        const res = await axios.post(REGISTER_API,{
-            username : name,
-            email : email,
-            password : pass,
-        })
+    // try {
+    //     const res = await axios.post(REGISTER_API,{
+    //         username : name,
+    //         email : email,
+    //         password : pass,
+    //     })
         setName('');
         setEmail('');
         setPass('');
         setMatchPwd('');
-        navigate('/');
+        navigate('/card');
         
-    } catch (err) {
-        if (!err?.response) {
-            setErrMsg('No Server Response');
-        } else if (err.response?.status === 409) {
-            setErrMsg('Username Taken');
-        } else {
-            setErrMsg('Registration Failed')
-        }
-        errRef.current.focus();
-    }
+    // } catch (err) {
+    //     if (!err?.response) {
+    //         setErrMsg('No Server Response');
+    //     } else if (err.response?.status === 409) {
+    //         setErrMsg('Username Taken');
+    //     } else {
+    //         setErrMsg('Registration Failed')
+    //     }
+    //     errRef.current.focus();
+    // }
   };
 
   return (
