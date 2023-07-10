@@ -1,7 +1,6 @@
 import React, { useState,useEffect,useRef } from "react";
 import { Link,useNavigate } from "react-router-dom";
 import axios from "axios";
-import { useGlobalContext } from "../../context/context";
 import "./login.css";
 
 const LOGIN_API = "https://reqres.in/api/login"
@@ -9,7 +8,6 @@ const LOGIN_API = "https://reqres.in/api/login"
 const Login = () => {
   const userRef = useRef();
   const errRef = useRef();
-  const {setToLogin} = useGlobalContext();
 
 const navigate = useNavigate();
 
@@ -39,7 +37,7 @@ useEffect(() => {
         })
         setEmail('');
         setPass('');
-        setToLogin(false);
+       
         navigate('/card')
 
 //         "email": "eve.holt@reqres.in",

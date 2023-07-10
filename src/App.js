@@ -10,13 +10,19 @@ import Navbar from "./pages/Navbar";
 import { Card } from "./pages/Card/Card";
 import { useGlobalContext } from "./context/context";
 import Page1 from "./pages/hero/Product";
+import Footer from "./pages/Footer/footer";
+import WithNavBarFooter from "./context/WithNavBarFooter";
+
 function App() {
   const { toLogin, setToLogin } = useGlobalContext();
 
   return (
     <div className="App">
       <Router>
-       <Navbar />
+      <WithNavBarFooter>
+      <Navbar />
+      </WithNavBarFooter>
+      
 
         <Routes>
           <Route path="/" element={<Page1 />} />
@@ -27,6 +33,9 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<Details />} />
         </Routes>
+        <WithNavBarFooter>
+      <Footer/>
+      </WithNavBarFooter>
       </Router>
     </div>
   );

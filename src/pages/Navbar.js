@@ -1,6 +1,5 @@
 import React,{useEffect} from "react";
 import { Link  } from "react-router-dom";
-import { useGlobalContext } from "../context/context";
 const links = [
   {
     id: 1,
@@ -36,10 +35,7 @@ const links = [
 ];
 
 const Navbar = () => {
-  const {setToLogin} =useGlobalContext();
-  const handleLogin = ()=>{
-    setToLogin(true);
-  }
+ 
   
   return (
     <div className="h-24 flex justify-between items-center bg-white">
@@ -54,7 +50,7 @@ const Navbar = () => {
         </Link>
       ))}
       <Link to="/login">
-        <button onClick={handleLogin} className="mr-4 px-4 py-2 bg-green-500 hover:bg-green-600 border-none cursor-pointer text-white rounded">
+        <button  className="mr-4 px-4 py-2 bg-green-500 hover:bg-green-600 border-none cursor-pointer text-white rounded">
           Login
         </button>
       </Link>

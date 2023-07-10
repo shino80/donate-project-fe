@@ -1,12 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link,useNavigate } from "react-router-dom";
 import axios from "axios";
-import { useGlobalContext } from "../../context/context";
 import "./register.css";
 
 const REGISTER_API = 'https://reqres.in/api/users';
 const Register = () => {
-  const {setToLogin} =useGlobalContext();
   const navigate =useNavigate();
   const userRef = useRef();
   const errRef = useRef();
@@ -42,7 +40,6 @@ const Register = () => {
         setEmail('');
         setPass('');
         setMatchPwd('');
-        setToLogin(false)
         navigate('/');
         
     } catch (err) {

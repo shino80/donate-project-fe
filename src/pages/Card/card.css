@@ -9,29 +9,36 @@
 }
 
 .card {
-    display: flex;
-    justify-content: center;
-    margin: 15rem auto; /* Set top and bottom margin to 5rem, and left and right margins to auto */
-    gap: 2rem;
-  }
-  
-  .single-card {
-    width: 600px;
-    height: auto;
-    border: 1px solid green;
-    border-radius: 4px;
-    padding: 10px;
-  }
-  
-  .card__body {
-    text-align: center;
-  }
-  
-  .card__image {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-  }
+  display: flex;
+  justify-content: center;
+  margin: 15rem auto; /* Set top and bottom margin to 5rem, and left and right margins to auto */
+  gap: 2rem;
+}
+
+.single-card {
+  width: 600px;
+  height: auto;
+  border: 1px solid green;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add box shadow */
+}
+
+.card__body {
+  text-align: center;
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  height: 20rem;
+  object-fit: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  display: block;
+}
+
   
   .card__btn {
     display: block;
