@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/donate-project-fe/static/css/main.7e76c505.css",
-    "main.js": "/donate-project-fe/static/js/main.4ab4057a.js",
+    "main.js": "/donate-project-fe/static/js/main.4b36bb0a.js",
     "static/media/homepage.jpg": "/donate-project-fe/static/media/homepage.632a9989a530f535fbaa.jpg",
     "static/media/fa-solid-900.ttf": "/donate-project-fe/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
     "static/media/fa-brands-400.ttf": "/donate-project-fe/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
@@ -15,10 +15,10 @@
     "static/media/fa-v4compatibility.woff2": "/donate-project-fe/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
     "index.html": "/donate-project-fe/index.html",
     "main.7e76c505.css.map": "/donate-project-fe/static/css/main.7e76c505.css.map",
-    "main.4ab4057a.js.map": "/donate-project-fe/static/js/main.4ab4057a.js.map"
+    "main.4b36bb0a.js.map": "/donate-project-fe/static/js/main.4b36bb0a.js.map"
   },
   "entrypoints": [
     "static/css/main.7e76c505.css",
-    "static/js/main.4ab4057a.js"
+    "static/js/main.4b36bb0a.js"
   ]
 }
