@@ -83,6 +83,7 @@ useEffect(() => {
           id="email"
           name="email"
           ref={userRef}
+          required
         />
         <label className="label-auth" htmlFor="password">
           Password
@@ -95,6 +96,7 @@ useEffect(() => {
           placeholder="********"
           id="password"
           name="password"
+          required
         />
         <button className="button-auth" type="submit">
           Log In
