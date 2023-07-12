@@ -34,14 +34,14 @@ const Details = () => {
       <div className="detail-product">
         <img src={image} alt={name} />
         <div className="product-info">
-          <div className="info-row">
+          <div >
             {" "}
             <p>Name: {name}</p>
           </div>
-          <div className="info-row">
+          <div >
             <p>Stocked: {stocked}</p>
           </div>
-          <div className="info-row">
+          <div >
             {" "}
             <p>
               Quantity:{" "}

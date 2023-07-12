@@ -1,0 +1,79 @@
+.section-donate{
+ background-color: antiquewhite;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  min-height: 100vh;
+  align-items: center;
+}
+
+.donate-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap:50px;
+  align-items: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh; /* Adjust the height as desired */
+  width: 80%; /* Adjust the width as desired */
+  max-width: 600px; /* Set a maximum width for responsiveness */
+  background-color: #f2f2f2;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.h1-donate{
+  color: green;
+  font-size: 3rem;
+  
+}
+.donate-label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.info-donate{
+  display: flex;
+  gap: 2rem;
+}
+.info-donate select {
+  width: 150px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+ 
+}
+
+
+.button-form {
+  text-align: center;
+}
+
+.button-donate {
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  color: var(--primaryColor);
+  border: 2px solid var(--primaryColor);
+  padding: 0.45rem 0.8rem;
+  display: inline-block;
+  transition: var(--mainTransition);
+  cursor: pointer;
+  font-size: 0.8rem;
+  background: transparent;
+  border-radius: var(--mainBorderRadius);
+  display: inline-block;
+  margin-top: 1rem;
+  width: 10rem;
+}
+
+.button-donate:hover {
+  background-color: #45a049;
+}

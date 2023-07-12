@@ -9,7 +9,7 @@ const data = [
     },
     {
       id: 2,
-      name: 'Food',
+      name: 'caro',
       // category : alcohol,
       stocked : 4 ,
       image:
@@ -18,7 +18,7 @@ const data = [
     }
      , {
       id: 3,
-      name: 'Food',
+      name: 'asda',
       stocked : 4 ,
       // category : alcohol,
       image:
@@ -26,7 +26,7 @@ const data = [
     },
     {
       id: 4,
-      name: 'Food',
+      name: 'asdas',
       // category : alcohol,
       stocked : 4 ,
       image:
@@ -34,7 +34,7 @@ const data = [
     },
     {
       id: 5,
-      name: 'Food',
+      name: 'Fasd',
       // category : alcohol,
       stocked : 4 ,
       image:
