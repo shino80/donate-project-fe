@@ -30,33 +30,33 @@ useEffect(() => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // try {
-        // const response = await axios.post(LOGIN_API,{
-        //     email:email,
-        //     password:pass
-        // })
+    try {
+        const response = await axios.post(LOGIN_API,{
+            email:email,
+            password:pass
+        })
         setEmail('');
         setPass('');
        
         navigate('/card')
 
-//         "email": "eve.holt@reqres.in",
-//     "password": "cityslicka"
-// }
+    //     "email": "eve.holt@reqres.in",
+    // "password": "cityslicka"
+}
 
-    // } catch (error) {
-    //     console.log(error)
-    //     if (!error?.response) {
-    //         setErrMsg('No Server Response !');
-    //     } else if (error.response?.status === 400) {
-    //         setErrMsg('Missing Username or Password !');
-    //     } else if (error.response?.status === 401) {
-    //         setErrMsg('Unauthorized !');
-    //     } else {
-    //         setErrMsg('Login Failed !');
-    //     }
+     catch (error) {
+        console.log(error)
+        if (!error?.response) {
+            setErrMsg('No Server Response !');
+        } else if (error.response?.status === 400) {
+            setErrMsg('Missing Username or Password !');
+        } else if (error.response?.status === 401) {
+            setErrMsg('Unauthorized !');
+        } else {
+            setErrMsg('Login Failed !');
+        }
 
-    // }
+    }
   };
 
   return (

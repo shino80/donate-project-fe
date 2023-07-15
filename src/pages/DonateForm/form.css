@@ -1,63 +1,59 @@
-.section-donate{
- background-color: antiquewhite;
+.section-donate {
+  background-color: #f2f2f2;
+  padding: 20px;
+  background-image: url(./homepage.jpg);
   background-size: cover;
-  background-repeat: no-repeat; 
-  min-height: 100vh;
-  align-items: center;
+  background-repeat: no-repeat;
 }
 
 .donate-form {
+  border: none;
+
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  gap:50px;
   align-items: center;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 80vh; /* Adjust the height as desired */
-  width: 80%; /* Adjust the width as desired */
-  max-width: 600px; /* Set a maximum width for responsiveness */
-  background-color: #f2f2f2;
-  padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-
+  padding: 5rem;
+  border: 1px solid green;
+  border-radius: 10px;
+  margin: 0.5rem;
 }
 
-
-.h1-donate{
+.h1-donate {
+  font-size: 2.5rem;
   color: green;
-  font-size: 3rem;
-  
+  margin-bottom: 20px;
+
+  padding: 10px; /* Add padding to create some space around the text */
+  /* Add any other custom styles for the h1 element */
 }
-.donate-label {
+
+.form-donate label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
-.info-donate{
-  display: flex;
-  gap: 2rem;
-}
-.info-donate select {
-  width: 150px;
-  padding: 8px;
-  border: 1px solid #ccc;
+.form-donate input {
+  width: 300px;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid green;
   border-radius: 4px;
-  margin-bottom: 15px;
- 
+  margin-bottom: 10px;
+  /* Add your custom styles for the input elements */
 }
 
-
-.button-form {
-  text-align: center;
+.form-donate select {
+  width: 100%;
+  padding: 12px; /* Increase the padding to make the elements bigger */
+  font-size: 16px; /* Increase the font size to make the text bigger */
+  border: 2px solid green;
+  border-radius: 4px;
+  margin-bottom: 10px;
 }
 
-.button-donate {
+.donate-form .button-donate {
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
   color: var(--primaryColor);
@@ -70,10 +66,25 @@
   background: transparent;
   border-radius: var(--mainBorderRadius);
   display: inline-block;
-  margin-top: 1rem;
-  width: 10rem;
+  margin-top: 30px;
+  width: 150px;
+}
+.button-donate:hover {
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+}
+.donate-form .image-input {
+  padding: 10px;
+  border: 1px solid green;
+  border-radius: 4px;
+  font-size: 16px;
 }
 
-.button-donate:hover {
-  background-color: #45a049;
+.donate-form .image-input:hover {
+  border-color: green;
+}
+
+.donate-form .image-input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
