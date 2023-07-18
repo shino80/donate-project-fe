@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link,useNavigate } from "react-router-dom";
-import axios from "axios";
+import authService from "../service/auth";
 import "./register.css";
 
-const REGISTER_API = 'https://reqres.in/api/users';
+
 const Register = () => {
   const navigate =useNavigate();
   const userRef = useRef();
@@ -28,31 +28,32 @@ const Register = () => {
     setErrMsg("");
   }, [name, email, pass, matchPwd]);
 
-  const handleSubmit =  async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // try {
-    //     const res = await axios.post(REGISTER_API,{
-    //         username : name,
-    //         email : email,
-    //         password : pass,
-    //     })
-        setName('');
-        setEmail('');
-        setPass('');
-        setMatchPwd('');
-        navigate('/card');
+    try {
+      await authService.register(email, pass, name).then((response) => {
+       if(response.status === 200){
+          setName('');
+          setEmail('');
+          setPass('');
+          setMatchPwd('');
+          navigate('/card');
+        }
+      });
+    } catch (err) {
+      console.log(err)
+      if (!err?.response) {
         
-    // } catch (err) {
-    //     if (!err?.response) {
-    //         setErrMsg('No Server Response');
-    //     } else if (err.response?.status === 409) {
-    //         setErrMsg('Username Taken');
-    //     } else {
-    //         setErrMsg('Registration Failed')
-    //     }
-    //     errRef.current.focus();
-    // }
+        setErrMsg('No Server Response');
+      } else if (err.response?.status === 409) {
+        setErrMsg('Username Taken');
+      } else {
+        setErrMsg('Registration Failed');
+      }
+      errRef.current.focus();
+    }
   };
+  
 
   return (
     <section className="section-app">
@@ -71,7 +72,7 @@ const Register = () => {
           Full name
         </label>
         <input
-          className="res-input"
+          className="input-auth"
           value={name}
           name="name"
           onChange={(e) => setName(e.target.value)}
@@ -115,7 +116,7 @@ const Register = () => {
           onChange={(e) => setMatchPwd(e.target.value)}
           type="password"
           placeholder="********"
-          id="password"
+          id="confirm-password"
           name="password"
         />
         {/* <p className={!validMatch ? 'errmsg' :'offscreen'}>

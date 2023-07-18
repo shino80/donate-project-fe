@@ -4,10 +4,10 @@ const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
     const [auth, setAuth] = useState({});
-    const [toLogin,setToLogin] = useState(false)
+   
    
     return (
-        <AppContext.Provider value={{ auth, setAuth,toLogin,setToLogin }}>
+        <AppContext.Provider value={{ auth, setAuth }}>
             {children}
         </AppContext.Provider>
     )

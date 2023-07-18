@@ -80,7 +80,7 @@ export const FormDonate = () => {
             <option value="10">10</option>
           </select>{" "}
         </form>
-        <Link to="">
+        <Link to="/products">
           <button
             onClick={handleSubmit}
             className="button-donate"
