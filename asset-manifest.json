@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/donate-project-fe/static/css/main.a2ce3555.css",
-    "main.js": "/donate-project-fe/static/js/main.4563369c.js",
-    "static/media/homepage.jpg": "/donate-project-fe/static/media/homepage.632a9989a530f535fbaa.jpg",
-    "static/media/fa-solid-900.ttf": "/donate-project-fe/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
-    "static/media/fa-brands-400.ttf": "/donate-project-fe/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
-    "static/media/fa-solid-900.woff2": "/donate-project-fe/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
-    "static/media/fa-brands-400.woff2": "/donate-project-fe/static/media/fa-brands-400.e033a13ee751afc1860c.woff2",
-    "static/media/fa-regular-400.ttf": "/donate-project-fe/static/media/fa-regular-400.d87474231f4192884802.ttf",
-    "static/media/food-donate.jpg": "/donate-project-fe/static/media/food-donate.267857e7fc492f0706a9.jpg",
-    "static/media/food.jpg": "/donate-project-fe/static/media/food.3420f1c88f9f9d37aa56.jpg",
-    "static/media/fa-regular-400.woff2": "/donate-project-fe/static/media/fa-regular-400.3223dc79c1adee56370b.woff2",
-    "static/media/fa-v4compatibility.ttf": "/donate-project-fe/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
-    "static/media/fa-v4compatibility.woff2": "/donate-project-fe/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
-    "index.html": "/donate-project-fe/index.html",
-    "main.a2ce3555.css.map": "/donate-project-fe/static/css/main.a2ce3555.css.map",
-    "main.4563369c.js.map": "/donate-project-fe/static/js/main.4563369c.js.map"
+    "main.css": "/donate-project-fe/home/static/css/main.924ca8d2.css",
+    "main.js": "/donate-project-fe/home/static/js/main.1e9740a5.js",
+    "static/media/homepage.jpg": "/donate-project-fe/home/static/media/homepage.632a9989a530f535fbaa.jpg",
+    "static/media/fa-solid-900.ttf": "/donate-project-fe/home/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
+    "static/media/fa-brands-400.ttf": "/donate-project-fe/home/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
+    "static/media/fa-solid-900.woff2": "/donate-project-fe/home/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
+    "static/media/fa-brands-400.woff2": "/donate-project-fe/home/static/media/fa-brands-400.e033a13ee751afc1860c.woff2",
+    "static/media/fa-regular-400.ttf": "/donate-project-fe/home/static/media/fa-regular-400.d87474231f4192884802.ttf",
+    "static/media/food-donate.jpg": "/donate-project-fe/home/static/media/food-donate.267857e7fc492f0706a9.jpg",
+    "static/media/food.jpg": "/donate-project-fe/home/static/media/food.3420f1c88f9f9d37aa56.jpg",
+    "static/media/fa-regular-400.woff2": "/donate-project-fe/home/static/media/fa-regular-400.3223dc79c1adee56370b.woff2",
+    "static/media/fa-v4compatibility.ttf": "/donate-project-fe/home/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
+    "static/media/fa-v4compatibility.woff2": "/donate-project-fe/home/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
+    "index.html": "/donate-project-fe/home/index.html",
+    "main.924ca8d2.css.map": "/donate-project-fe/home/static/css/main.924ca8d2.css.map",
+    "main.1e9740a5.js.map": "/donate-project-fe/home/static/js/main.1e9740a5.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2ce3555.css",
-    "static/js/main.4563369c.js"
+    "static/css/main.924ca8d2.css",
+    "static/js/main.1e9740a5.js"
   ]
 }
