@@ -1,7 +1,7 @@
 const data = [
     {
       id: 1,
-      name: 'Food',
+      name: 'Life',
       stocked : 4 ,
       // category : vegetable,
       image:
@@ -9,7 +9,7 @@ const data = [
     },
     {
       id: 2,
-      name: 'caro',
+      name: 'File',
       // category : alcohol,
       stocked : 4 ,
       image:

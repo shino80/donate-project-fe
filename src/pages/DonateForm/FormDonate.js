@@ -5,7 +5,6 @@ import "./form.css";
 // import axios from "axios";
 export const FormDonate = () => {
   const navigate = useNavigate();
-  const [quantity, setQuantity] = useState(1);
   const [foodName, setFoodName] = useState("");
   const [category, setCategory] = useState("Category");
   const [selectedImage, setSelectedImage] = useState(null);
@@ -14,9 +13,7 @@ export const FormDonate = () => {
   const handleImageUpload = (event) => {
     setSelectedImage(event.target.files[0]);
   };
-  const handleQuantityChange = (event) => {
-    setQuantity(event.target.value);
-  };
+ 
   const handleCategory = (event) => {
     setCategory(event.target.value);
   };
@@ -28,7 +25,7 @@ export const FormDonate = () => {
       // image : selectedImage,
     //   name : foodName,
     //   category : category,
-    //   quantity : quantity
+    // 
     // })
     // navigate("/products")
   };
@@ -66,19 +63,6 @@ export const FormDonate = () => {
               return <option>{product.name}</option>;
             })}
           </select>
-          <label className="donate-label">Quantity </label>
-          <select onChange={handleQuantityChange} value={quantity}>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-          </select>{" "}
         </form>
         <Link to="/products">
           <button

@@ -1,15 +1,12 @@
 import axios from "axios";
-
-const API_URL = "https://api.escuelajs.co/api/v1";
+const API_URL = "https://reqres.in/api";
 
 const register = (email, pass, name) => {
   return axios
-    .post(`${API_URL}/users/`, {
-      // Request body data
+    .post(`${API_URL}/resgister`, {
       email: email,
       password: pass,
       name: name,
-     
     })
     .then((response) => {
       // Check if the response contains an accessToken
@@ -25,7 +22,7 @@ const register = (email, pass, name) => {
 
 const login = (email, password) => {
   return axios
-    .post(`${API_URL}/auth/login`, {
+    .post(`${API_URL}/login`, {
       email: email,
       password: password,
     })

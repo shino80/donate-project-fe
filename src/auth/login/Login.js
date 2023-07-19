@@ -1,15 +1,16 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 import "./login.css";
 import authService from "../service/auth";
-
+import { useGlobalContext } from "../../context/context";
 const Login = () => {
+  const { setAuth } = useGlobalContext();
   const userRef = useRef();
   const errRef = useRef();
-
+  const location = useLocation();
   const navigate = useNavigate();
-
+  const from = location?.state?.from || "/";
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
   const [errMsg, setErrMsg] = useState("");
@@ -25,13 +26,16 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await authService.login(email, pass).then(() => {
+      await authService.login(email, pass).then((response) => {
+        const accessToken = response?.data?.accessToken;
+
         setEmail("");
         setPass("");
-        navigate("/card");
 
-      // email:john@mail.com,
-      // pass: changeme
+        navigate(from, { replace: true });
+        setAuth({ email, pass });
+        // email:eve.holt@reqres.in,
+        // pass: cityslicka
       });
     } catch (error) {
       console.log(error);
@@ -86,6 +90,7 @@ const Login = () => {
             name="password"
             required
           />
+
           <button className="button-auth" type="submit">
             Log In
           </button>

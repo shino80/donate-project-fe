@@ -3,38 +3,44 @@ import Login from "./auth/login/Login";
 import Register from "./auth/register/Register";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import { Home } from "./pages/Home";
 import Products from "./pages/products-donate/Products/Products";
 import Details from "./pages/products-donate/Details/Details";
-import Navbar from "./pages/Navbar";
+import Navbar from "./pages/NavBar/Navbar";
 import { Card } from "./pages/Card/Card";
 import Page1 from "./pages/hero/Product";
 import Footer from "./pages/Footer/footer";
 import WithNavBarFooter from "./context/WithNavBarFooter";
 import FormDonate from "./pages/DonateForm/FormDonate";
-function App() {
- 
+import { Layout } from "./pages/Layout";
+import { RequireAuth } from "./context/RequireAuth";
 
+function App() {
   return (
     <div className="App">
       <Router>
-      <WithNavBarFooter>
-      <Navbar />
-      </WithNavBarFooter>
-      
+        <WithNavBarFooter>
+          <Navbar />
+        </WithNavBarFooter>
 
         <Routes>
-          <Route path="/" element={<Page1 />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/card" element={<Card />} />
-          <Route path="/donate-form" element={<FormDonate/>}/>
-          <Route path="/products" element={<Products />} />
-          <Route path="/products/:id" element={<Details />} />
+          <Route path="/" element={<Layout />}>
+            {/* public routes */}
+            <Route path="/" element={<Page1 />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+
+            <Route element={<RequireAuth />}>
+              {/* private routes */}
+              <Route path="/card" element={<Card />} />
+              <Route path="/donate-form" element={<FormDonate />} />
+              <Route path="/products" element={<Products />} />
+              <Route path="/products/:id" element={<Details />} />
+            </Route>
+          </Route>
         </Routes>
         <WithNavBarFooter>
-      <Footer/>
-      </WithNavBarFooter>
+          <Footer />
+        </WithNavBarFooter>
       </Router>
     </div>
   );

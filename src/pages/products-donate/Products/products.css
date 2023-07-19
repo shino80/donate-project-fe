@@ -5,7 +5,17 @@
 
   --fullWidth: 1170px;
 }
-
+.section-app{
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-image: url(../../../../public/img/homepage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; 
+ }
 
 .section {
   padding: 5rem 0;

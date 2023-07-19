@@ -1,5 +1,16 @@
 
 /* DETAILS */
+.section-app{
+    text-align: center;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-image: url(../../../../public/img/homepage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+   }
 .product-section {
     margin: 0;
     padding: 0;
@@ -69,6 +80,5 @@
     background: var(--primaryColor);
     color: var(--mainWhite);
   }
-  
 
 
