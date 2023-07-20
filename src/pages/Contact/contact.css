@@ -1,0 +1,14 @@
+/* ContactForm.css */
+.contact-form {
+    
+    border: 1px solid green;
+    padding: 20px;
+    border-radius: 5px;
+  }
+.contact-form h2 {
+    font-size: 2rem;
+    color: green;
+}
+.contact-form button{
+    color: black;
+}

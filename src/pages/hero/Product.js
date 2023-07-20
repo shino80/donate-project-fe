@@ -10,10 +10,13 @@ const Page1 = () => {
         <div className="content">
           <h1>Food Donation</h1>
           <p>
-            Donating food is crucial in addressing food insecurity and hunger,
-            which affect millions of people worldwide. By donating food, you can
-            contribute to reducing waste, supporting vulnerable populations, and
-            ensuring access to nutritious meals for those who need it most.
+            Food donation emerges as a key solution in addressing the global
+            food crisis. By donating food, individuals, communities, and
+            organizations contribute to alleviating hunger and providing
+            sustenance to those who struggle to access nutritious meals. Whether
+            it's through local food banks, charitable organizations, or
+            community-driven initiatives, every donation makes a significant
+            difference in the lives of the less fortunate.
           </p>
           <Link to="/donate-form">
             {" "}

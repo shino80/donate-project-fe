@@ -8,9 +8,9 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer-content">
-        <h3>Food Donate</h3>
+        <h3>Donate Food</h3>
         <p>
-          Made with <span class="heart">&#10084;</span> by Will
+          Made with <span class="heart">&#10084;</span> by Donate Team
         </p>
         <ul className="socials">
           <li>

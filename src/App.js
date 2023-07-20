@@ -13,7 +13,8 @@ import WithNavBarFooter from "./context/WithNavBarFooter";
 import FormDonate from "./pages/DonateForm/FormDonate";
 import { Layout } from "./pages/Layout";
 import { RequireAuth } from "./context/RequireAuth";
-
+import ContactForm from "./pages/Contact/Contact";
+import About from "./pages/About/About";
 function App() {
   return (
     <div className="App">
@@ -28,6 +29,8 @@ function App() {
             <Route path="/" element={<Page1 />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/contact" element={<ContactForm />} />
+            <Route path="/about" element={<About />} />
 
             <Route element={<RequireAuth />}>
               {/* private routes */}

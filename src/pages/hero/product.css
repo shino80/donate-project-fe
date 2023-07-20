@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 .container-page {
    width: 100%;
    height: 100vh;
@@ -6,7 +7,7 @@
   background-image: url(../../../public/img/food.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Anton', sans-serif;
   }
 
   .container-page img {
@@ -41,8 +42,9 @@
   color: black;
   letter-spacing: 1px;
   line-height: 28px;
-  font-size: 18px;
+  font-size: 1.5rem;
   margin-bottom: 45px;
+  margin-top: 50px;
 }
 .btn-page {
   background-color: white;
@@ -50,7 +52,7 @@
   text-decoration: none;
   border: none;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: 13px 30px;
   border-radius: 30px;
   transition: 0.4s;

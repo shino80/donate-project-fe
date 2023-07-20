@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate,useLocation } from "react-router-dom";
 import authService from "../service/auth";
 import "./register.css";
 import { useGlobalContext } from "../../context/context";
@@ -9,7 +9,8 @@ const Register = () => {
   const navigate = useNavigate();
   const userRef = useRef();
   const errRef = useRef();
-
+  const location = useLocation();
+  const from = location?.state?.from || "/";
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
@@ -36,9 +37,9 @@ const Register = () => {
         setEmail("");
         setPass("");
         setMatchPwd("");
-
-        navigate("/card");
         setAuth({ email, pass });
+        navigate(from, { replace: true });
+       
       });
     } catch (err) {
       console.log(err);
