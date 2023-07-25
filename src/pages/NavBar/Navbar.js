@@ -25,6 +25,12 @@ const links = [
     title: "Products From Donator",
     url: "/products",
   },
+
+  {
+    id: 5,
+    title: "Dashboard",
+    url: "/dashboard",
+  },
 ];
 
 const Navbar = () => {

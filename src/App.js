@@ -15,6 +15,7 @@ import { Layout } from "./pages/Layout";
 import { RequireAuth } from "./context/RequireAuth";
 import ContactForm from "./pages/Contact/Contact";
 import About from "./pages/About/About";
+import DashBoard from "./pages/Dashboard";
 function App() {
   return (
     <div className="App">
@@ -31,13 +32,15 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/contact" element={<ContactForm />} />
             <Route path="/about" element={<About />} />
-
             <Route element={<RequireAuth />}>
               {/* private routes */}
+              <Route path="/dashboard" element={<DashBoard/>} />
+
               <Route path="/card" element={<Card />} />
               <Route path="/donate-form" element={<FormDonate />} />
               <Route path="/products" element={<Products />} />
               <Route path="/products/:id" element={<Details />} />
+             
             </Route>
           </Route>
         </Routes>
