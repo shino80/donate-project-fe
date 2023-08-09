@@ -57,7 +57,7 @@ export const DashBoard = () => {
                 }}
               />
             }
-            title="Tổng Sản Phẩm Cho"
+            title="Total Products"
             value={1000}
           />
           <DashBoardCard
@@ -72,7 +72,7 @@ export const DashBoard = () => {
                 }}
               />
             }
-            title="Người Quyên Góp "
+            title="Donators "
             value={200}
           />
           <DashBoardCard
@@ -87,7 +87,7 @@ export const DashBoard = () => {
                 }}
               />
             }
-            title="Tổng Sản Phẩm Nhận"
+            title="Total Receive Products"
             value={500}
           />
 
@@ -103,7 +103,7 @@ export const DashBoard = () => {
                 }}
               />
             }
-            title="Tổng Người Nhận"
+            title="Total Recipients"
             value={200}
           />
         </Space>
@@ -144,19 +144,19 @@ function RecentOrders() {
       <Table
         columns={[
           {
-            title: "Tên Sản Phẩm",
+            title: "Product Name",
             dataIndex: "title",
           },
           {
-            title: "Số Lượng Đã Tặng",
+            title: "Amount Given",
             dataIndex: "quantity",
           },
           {
-            title: "Số Lượng Đã Quyên Góp",
+            title: "Amount Donated",
             dataIndex: "quantity",
           },
           {
-            title: "Số Lượng Người Nhận",
+            title: "Amount of Recipients",
             dataIndex: "quantity",
           }
         ]}
@@ -192,13 +192,13 @@ function DashBoardChart() {
         labels,
         datasets: [
           {
-            label: "Số sản phẩm cho",
+            label: "Number of donated products",
             data: data,
             borderColor: "rgb(255, 99, 132)",
             backgroundColor: "rgba(255, 99, 132, 0.5)",
           },
           {
-            label: "Số sản phẩm nhận ",
+            label: "Number of products received ",
             data: data,
             borderColor: "rgb(53, 162, 235)",
             backgroundColor: "rgba(53, 162, 235, 0.5)",
@@ -217,7 +217,7 @@ function DashBoardChart() {
       },
       title: {
         display: true,
-        text: "So sánh số sản phẩm nhận và cho trong từng tháng ",
+        text: "Compare the number of products received and given in each month",
       },
     },
   };

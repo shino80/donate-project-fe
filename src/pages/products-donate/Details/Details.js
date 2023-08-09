@@ -93,7 +93,7 @@ const Details = () => {
 
             <div className="buttons">
               <Link onClick={handleDonate} className="btn-donate" to="">
-                Recevie
+                Receive
               </Link>
             </div>
           </div>
